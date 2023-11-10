@@ -88,3 +88,43 @@
     ['Feb-2017', 671099],
   ];
   
+// Step 1. Initialization
+var totalMonths = finances.length;
+var netTotal = 0;
+var changes = [];
+
+// Step 2. Condition - Loop through each record in finances
+for (var i=0; i < totalMonths; i++) {
+
+
+  // 2.1: Add Profit/Loss to nettotal
+  nettotal += finances[i][1];
+}
+  // 2.2: If not the first record, calculate and store the change in 'var changes'
+if (i > 0) {
+
+finances [i][1];]
+
+  // 2.3: Calculate averageChange
+  var averageChange = 
+
+  // 2.4: Find greatestIncrease and greatestDecrease
+  // NOTE: add loops here
+  var increaseIndex =
+  var decreaseIndex =
+  var greatestIncrease = 0
+  var greatestDecrease =
+  var greatestIncreaseMonth = 
+  var greatestDecreaseMonth = 
+
+  // 2.5: Get the corresponding month for both greatestIncrease and greatestDecrease
+
+
+  // 2.6: Print the financial analysis to the console
+  console.log("Financial Analysis")
+  console.log("------------------")
+  console.log("Total Months:")
+  console.log("Total: $" + netTotal)
+  console.log("Average Change: $")
+  console.log("Greatest Increase in Profits/Losses: DATE & AMOUNT")
+  console.log("Greatest Decrease in Profits/Losses: DATE & AMOUNT")

@@ -25,10 +25,15 @@ To use this webpage, follow these steps:
 https://feliperyder.github.io/console-finances/
 Then inspect the page and view the console log.
 
-2. Screenshot
+2. Screenshot of comand line
 ![](./assets/console-finances-screenshot.jpg)
 
 ## Credits
+
+! [Concatenation](https://www.w3schools.com/java/java_strings_concat.asp)
+
+! [Functions] (https://www.w3schools.com/js/js_functions.asp)
+
 
 - Technologies Used: HTML & Javascript
 
