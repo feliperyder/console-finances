@@ -96,14 +96,13 @@ var changes = [];
 // Step 2. Condition - Loop through each record in finances
 for (var i=0; i < totalMonths; i++) {
 
-
   // 2.1: Add Profit/Loss to nettotal
   nettotal += finances[i][1];
 }
   // 2.2: If not the first record, calculate and store the change in 'var changes'
 if (i > 0) {
-
-finances [i][1];]
+  changes.push(finances[i][1] - finances[i -1][1]);
+}
 
   // 2.3: Calculate averageChange
   var averageChange = 
