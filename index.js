@@ -102,7 +102,7 @@ for (var i=0; i < totalMonths; i++) {
 
   // 2.2: If not the first record, calculate and store the change in 'var changes'
 if (i > 0) {
-  changes.push(finances[i][1] - finances[i -1][1]);
+  changes.push(finances[i][1]-finances[i-1][1]);
 }
 
   // 2.3: Calculate averageChange
