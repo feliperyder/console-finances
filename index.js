@@ -1,5 +1,5 @@
 // Given dataset
-  var finances = [
+  const finances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
     ['Mar-2010', 322013],
@@ -89,12 +89,12 @@
   ];
   
 // Step 1. Initialization
-var totalMonths = finances.length;
-var netTotal = 0;
-var changes = [];
+const totalMonths = finances.length;
+let netTotal = 0;
+const changes = [];
 
 // Step 2. Condition - Loop through each record in finances
-for (var i=0; i < totalMonths; i++) {
+for (let i=0; i < totalMonths; i++) {
 
   // 2.1: Add Profit/Loss to netTotal
   netTotal += finances[i][1];
@@ -106,18 +106,18 @@ for (var i=0; i < totalMonths; i++) {
 }
 
   // 2.3: Calculate averageChange
-  var averageChange = changes.reduce((sum,change)=>sum+change,0)/(totalMonths-1);
+  const averageChange = changes.reduce((sum,change)=>sum+change,0)/(totalMonths-1);
 
   // 2.4: Find greatestIncrease and greatestDecrease
-  var greatestIncrease = Math.max(...changes);
-  var greatestDecrease = Math.min(...changes);
+  const greatestIncrease = Math.max(...changes);
+  const greatestDecrease = Math.min(...changes);
 
   // 2.5: Get the corresponding month for both greatestIncrease and greatestDecrease
-  var increaseIndex = changes.indexOf(greatestIncrease) +1;
-  var decreaseIndex = changes.indexOf(greatestDecrease) +1;
+  const increaseIndex = changes.indexOf(greatestIncrease) +1;
+  const decreaseIndex = changes.indexOf(greatestDecrease) +1;
 
-  var greatestIncreaseMonth = finances[increaseIndex][0];
-  var greatestDecreaseMonth = finances[decreaseIndex][0];
+  const greatestIncreaseMonth = finances[increaseIndex][0];
+  const greatestDecreaseMonth = finances[decreaseIndex][0];
 
   // 2.6: Print the financial analysis to the console
   console.log("Financial Analysis");
