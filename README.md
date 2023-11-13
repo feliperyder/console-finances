@@ -26,7 +26,7 @@ https://feliperyder.github.io/console-finances/
 Then inspect the page and view the console log.
 
 2. Screenshot of comand line
-![](./assets/console-finances-screenshot.jpg)
+![](./console-finances-screenshot.jpg)
 
 ## Credits
 
