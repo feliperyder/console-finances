@@ -125,5 +125,6 @@ for (var i=0; i < totalMonths; i++) {
   console.log("Total Months:", totalMonths);
   console.log("Net Total: $", netTotal);
   console.log("Average Change: $", averageChange.toFixed(2));
-  console.log("Greatest Increase in Profits/Losses:", greatestIncreaseMonth, "($" + greatestIncrease + ")");
-  console.log("Greatest Decrease in Profits/Losses:", greatestDecreaseMonth, "($" + greatestDecrease + ")");
+  console.log(`Greatest Increase in Profits/Losses: ${greatestIncreaseMonth} ($${greatestIncrease})`);
+  console.log(`Greatest Decrease in Profits/Losses: ${greatestDecreaseMonth} ($${greatestDecrease})`);
+
