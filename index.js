@@ -109,15 +109,15 @@ if (i > 0) {
   var averageChange = changes.reduce((sum,change)=>sum+change,0)/(totalMonths-1);
 
   // 2.4: Find greatestIncrease and greatestDecrease
-  var greatestIncreaseMonth = Math.max(...changes);
-  var greatestDecreaseMonth = Math.min(...changes);
+  var greatestIncrease = Math.max(...changes);
+  var greatestDecrease = Math.min(...changes);
 
   // 2.5: Get the corresponding month for both greatestIncrease and greatestDecrease
-  var increaseIndex =
-  var decreaseIndex =
+  var increaseIndex = changes.indexOf(greatestIncrease) +1;
+  var decreaseIndex = changes.indexOf(greatestDecrease) +1;
 
-  var greatestIncrease = 0
-  var greatestDecrease =
+  var greatestIncreaseMonth = finances[increaseIndex][0];
+  var greatestDecreaseMonth = finances[decreaseIndex][0];
 
   // 2.6: Print the financial analysis to the console
   console.log("Financial Analysis")
