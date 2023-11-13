@@ -109,13 +109,13 @@ if (i > 0) {
   var averageChange = changes.reduce((sum,change)=>sum+change,0)/(totalMonths-1);
 
   // 2.4: Find greatestIncrease and greatestDecrease
-  var greatestIncreaseMonth = 
-  var greatestDecreaseMonth = 
+  var greatestIncreaseMonth = Math.max(...changes);
+  var greatestDecreaseMonth = Math.min(...changes);
 
   // 2.5: Get the corresponding month for both greatestIncrease and greatestDecrease
   var increaseIndex =
   var decreaseIndex =
-  
+
   var greatestIncrease = 0
   var greatestDecrease =
 
